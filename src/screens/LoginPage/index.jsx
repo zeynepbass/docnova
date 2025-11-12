@@ -54,10 +54,10 @@ export default function LoginPage() {
           layout="vertical"
           onFinish={handleLogin}
           autoComplete="off"
-          initialValues={{
-            email: "devmelauser@yopmail.com",
-            password: "Work123???",
-          }}
+            // initialValues={{
+          //   email: "devmelauser@yopmail.com",
+          //   password: "Work123???",
+          // }}
         >
           <h2
             style={{
