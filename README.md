@@ -1,4 +1,4 @@
-🚀 React + Vite Projesi Başlangıç Rehberi
+🚀 React + Vite Proje Docnova
 
 Neden Vite?
 Vite, performans odaklı bir geliştirme sunucusu sağlar ve projeyi çok daha hızlı başlatır.
