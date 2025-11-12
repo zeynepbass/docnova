@@ -1,0 +1,103 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: "tr",
+    lng: localStorage.getItem("language") || "en",
+    interpolation: {
+      escapeValue: false,
+    },
+    resources: {
+      tr: {
+        translation: {
+          soon:"Yakında",
+          logout:"Çıkış Yap",
+          welcome: "Hoş geldiniz",
+          home: "Ana Sayfa",
+          about: "Hakkımda",
+          search: "Arama",
+          contact: "İletişim",
+          loginMessage: "Devam etmek için giriş yapın",
+          email: "E-posta",
+          emailRequired: "E-posta gerekli",
+          password: "Şifre",
+          passwordRequired: "Şifre gerekli",
+          rememberMe: "Beni hatırla",
+          forgotPassword: "Şifremi unuttum",
+          loginButton: "Giriş Yap",
+          companyId: "Şirket ID",
+          customer: "Müşteri",
+          invoiceNo: "Fatura No",
+          issueDate: "Düzenlenme Tarihi",
+          dueDate: "Vade Tarihi",
+          amount: "Tutar (€)",
+          status: "Durum",
+          actions: "İşlemler",
+          details: "Detay",
+          loading: "Yükleniyor...",
+          error: "Bir hata oluştu",
+
+          invoiceNotSelected: "Fatura seçilmedi.",
+          invoice: "Fatura",
+          supplier: "Tedarikçi",
+          companyId: "Şirket ID",
+          issueDate: "Düzenleme Tarihi",
+          dueDate: "Bitiş Tarihi",
+          totalAmount: "Toplam Tutar",
+          paymentStatus: "Ödeme Durumu",
+          taxInclusiveAmount: "Vergi Dahil Tutar",
+          taxExclusiveAmount: "Vergi Hariç Tutar",
+          invoiceSource: "Fatura kaynağı",
+        },
+      },
+      en: {
+        translation: {
+          soon:"Soon",
+          logout:"Log Out",
+          welcome: "Welcome",
+          loginMessage: "Please log in to continue",
+          email: "Email",
+          home: "Home",
+          search: "Search",
+          contact: "Contact",
+          about: "About",
+          emailRequired: "Email is required",
+          password: "Password",
+          passwordRequired: "Password is required",
+          rememberMe: "Remember me",
+          forgotPassword: "Forgot password",
+          loginButton: "Login",
+          companyId: "Company ID",
+          customer: "Customer",
+          invoiceNo: "Invoice No",
+          issueDate: "Issue Date",
+          dueDate: "Due Date",
+          amount: "Amount (€)",
+          status: "Status",
+          actions: "Actions",
+          details: "Details",
+          loading: "Loading...",
+          error: "An error occurred",
+
+          invoiceNotSelected: "No invoice selected.",
+          invoice: "Invoice",
+          supplier: "Supplier",
+          companyId: "Company ID",
+          issueDate: "Issue Date",
+          dueDate: "Due Date",
+          status: "Status",
+          totalAmount: "Total Amount",
+          paymentStatus: "Payment Status",
+          taxInclusiveAmount: "Tax Inclusive Amount",
+          taxExclusiveAmount: "Tax Exclusive Amount",
+          invoiceSource: "Invoice Source",
+        },
+      },
+    },
+  });
+
+export default i18n;
