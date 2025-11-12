@@ -9,6 +9,9 @@ npm install
 Projeyi Başlatmak:
 npm run dev
 
+Proje Url:
+http://localhost:3000
+
 Proje Yapısı ve Kullanılan Teknolojiler
 
 1) React + Redux Toolkit + Redux Thunk:
